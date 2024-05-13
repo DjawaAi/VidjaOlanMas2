@@ -10,8 +10,7 @@ public class Main {
         System.out.println();
         int [] amount = new int[] {340, 690, 439, 1523, 541};
         int total = 0;
-        for (int i = 0; i < amount.length; i++) {
-            final int l1 = amount[i];
+        for (final int l1 : amount) {
             total += l1;
         }
         System.out.println("Сумма трат за месяц составила " +total+ " рублей");
